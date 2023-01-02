@@ -10,8 +10,24 @@
     <title>Task Manager</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <!-- Top navbar-->
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Task Manager</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    Hello World!
+        <!-- Mobile sidenav-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+        </ul>
+    </header>
+
 
     <!-- Compiled and minified JavaScript from Materialze site -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
